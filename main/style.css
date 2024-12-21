@@ -141,7 +141,7 @@ header .lower .products a{
     align-items: center;
     border-bottom: .5px solid #58585857;
 }
-.active{
+.products__hover .upper .active{
     border-bottom: 2.5px solid rgb(70, 115, 240);
     transition: all .2s;
 }
@@ -237,4 +237,321 @@ header .lower .products a{
 .products__hover .lower4 .left ul li a{
     text-decoration: none;
     color: #585858b7;
+}
+
+/*--------main__1st------ */
+.main__1st{
+    width: 100%;
+    height:40%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .main__1st .upper{
+    width:88%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+.main__1st .upper ul{
+    width: 60%;
+    height:80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    list-style: none;
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+}
+.main__1st .upper ul li{
+    
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__1st .upper ul .active2{
+    border-bottom: 3px solid black;
+}
+
+/*-----------main first design --------------*/
+
+/*----------------lower4--------- ---------*/
+.main__1st .lower4{
+    width:88%;
+    height:70%;
+    display: none;  /*change of display */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'image1 image1 image1'
+    'image2 image3 image4';
+    grid-gap: 10px;
+    row-gap: 30px;
+}
+.main__1st .lower4 .image{
+    overflow: hidden;
+    
+}
+.main__1st .lower4 img {
+    width: 100%; /* Make images take the full width of their grid areas */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 1s;
+}
+.main__1st .lower4 img:hover{
+    transform: scale(1.03);
+}
+
+.main__1st .lower4 .image1{
+    grid-area: image1;
+}
+.main__1st .lower4 .image2{
+    grid-area: image2;
+}
+.main__1st .lower4 .image3{
+    grid-area: image3;
+}
+.main__1st .lower4 .image4{
+    grid-area: image4;
+}
+/*--------lower3----------- */
+.main__1st .lower3{
+    width:88%;
+    height:70%;
+    display: none;  /*change of display */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'image1 image1 image1'
+    'image2 image3 image4';
+    grid-gap: 10px;
+    row-gap: 30px;
+}
+.main__1st .lower3 .image{
+    overflow: hidden;
+    
+}
+.main__1st .lower3 img {
+    width: 100%; /* Make images take the full width of their grid areas */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 1s;
+}
+.main__1st .lower3 img:hover{
+    transform: scale(1.03);
+}
+
+.main__1st .lower3 .image1{
+    grid-area: image1;
+}
+.main__1st .lower3 .image2{
+    grid-area: image2;
+}
+.main__1st .lower3 .image3{
+    grid-area: image3;
+}
+.main__1st .lower3 .image4{
+    grid-area: image4;
+}
+/*--------lower2----------- */
+.main__1st .lower2{
+    width:88%;
+    height:70%;
+    display: none;  /*change of display */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    row-gap: 20px;
+}
+.main__1st .lower2 .image{
+    overflow: hidden;
+    
+}
+.main__1st .lower2 img {
+    width: 100%; /* Make images take the full width of their grid areas */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 1s;
+}
+.main__1st .lower2 img:hover{
+    transform: scale(1.03);
+}
+
+.main__1st .lower2 .image1{
+    grid-column: 1 / 3;
+}
+/*--------lower1----------- */
+.main__1st .lower1{
+    width:88%;
+    height:70%;
+    display: grid;  /*change of display */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    row-gap: 20px;
+}
+.main__1st .lower1 .image{
+    overflow: hidden;
+    
+}
+.main__1st .lower1 img {
+    width: 100%; /* Make images take the full width of their grid areas */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 1s;
+}
+.main__1st .lower1 img:hover{
+    transform: scale(1.03);
+}
+
+.main__1st .lower1 .image1{
+    grid-column: 1 / 6;
+}
+
+/*-------popularItems--------*/
+.popularItems{
+    width: 100%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.popularItems .title{
+    width:90%;
+    height: 20% ;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+    font-family: iranYekan4;
+    font-weight: 400;
+    font-size: 19px;
+    padding:1.7rem
+}
+.popularItems__display{
+    width:90%;
+    height: 80%;
+    overflow: hidden;
+}
+.popularItems__movingFrame{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+.popularItems__movingFrame .itemA{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemA img{
+    width: 290px;
+    height: 290px;
+}
+.popularItems__movingFrame .itemB{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemB img{
+    width: 290px;
+    height: 290px;
+}
+.popularItems__movingFrame .itemC{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemC img{
+    width: 290px;
+    height: 290px;
+}
+.popularItems__movingFrame .itemD{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemD img{
+    width: 290px;
+    height: 290px;
+}
+.popularItems__movingFrame .itemE{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemE img{
+    width: 290px;
+    height: 290px;
+}
+.popularItems__movingFrame .itemF{
+    min-width: 33.3%;
+    gap:2rem;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popularItems__movingFrame .itemF img{
+    width: 290px;
+    height: 290px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.buttons button{
+    width: 5rem;
+    height:2rem;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.discounts{
+    margin-top:2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height:40rem;
+    align-items: center;
+   gap:1rem;
+   flex-direction: column;
+}
+.ss1{
+
+    margin-top:1rem;
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-direction: column;
 }

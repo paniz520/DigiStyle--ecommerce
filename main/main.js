@@ -1,4 +1,4 @@
- 
+ /*--------header picture slider functionality-------*/
  let currentIndex = 0;
  let slides = document.querySelectorAll('.slide');
  let slidesDiv = document.querySelector('.slides');
@@ -58,3 +58,53 @@ headerHovers.forEach((headerHover)=>{
         }
     });
 });
+
+
+//-------main 1st item hover----------//
+
+let main__firstLIs = document.querySelectorAll('.main__first-li');
+let main__1stLower4 = document.querySelector('.main__1st .lower4');
+let main__1stLower3 = document.querySelector('.main__1st .lower3');
+let main__1stLower2 = document.querySelector('.main__1st .lower2');
+let main__1stLower1 = document.querySelector('.main__1st .lower1');
+main__firstLIs.forEach( (li)=>{
+    li.addEventListener('click', ()=>{
+        main__firstLIs.forEach( (li)=> li.classList.remove('active2') );
+        li.classList.add('active2');
+        if(li.classList.contains('li4')){
+            main__1stLower4.style.display = 'grid';
+            main__1stLower3.style.display = 'none'
+            main__1stLower2.style.display = 'none'
+            main__1stLower1.style.display = 'none'
+        }
+        if(li.classList.contains('li3')){
+            main__1stLower4.style.display = 'none';
+            main__1stLower3.style.display = 'grid'
+            main__1stLower2.style.display = 'none'
+            main__1stLower1.style.display = 'none'
+        }
+        if(li.classList.contains('li2')){
+            main__1stLower4.style.display = 'none';
+            main__1stLower3.style.display = 'none'
+            main__1stLower2.style.display = 'grid'
+            main__1stLower1.style.display = 'none'
+        }
+        if(li.classList.contains('li1')){
+            main__1stLower4.style.display = 'none';
+            main__1stLower3.style.display = 'none'
+            main__1stLower2.style.display = 'none'
+            main__1stLower1.style.display = 'grid'
+        }
+    })
+})
+
+/*---------popular items slider -------*/
+let popularItems__movingFrame = document.querySelector('.popularItems__movingFrame');
+function scrollRight()
+{
+    popularItems__movingFrame.style.transform = `translateX(${-100}%)`;
+}
+function scrollLeftItem()
+{
+    popularItems__movingFrame.style.transform = `translateX(${0}%)`;
+} 
